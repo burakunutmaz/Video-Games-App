@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/uzgunuz"
+        android:text="@string/uzgunuz"
+        android:layout_width="300dp"
+        android:textAlignment="center"
+        android:textColor="@color/color_three"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/search_bar_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/color_two"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:hint="@string/search"
+            android:maxWidth="250dp"
+            android:textColor="@color/color_two"
+            android:textColorHint="@color/color_two"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_below="@id/search_bar"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabDots"
+        android:layout_below="@id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@android:color/transparent"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/games_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabDots"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>

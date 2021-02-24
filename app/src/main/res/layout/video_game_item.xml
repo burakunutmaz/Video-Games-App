@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/game_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:text="Legend of Zelda"
+            android:textColor="@color/color_three"
+            android:layout_toEndOf="@id/game_image"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/game_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.9"
+            android:textColor="@color/color_three"
+            android:textSize="15sp"
+            android:layout_below="@id/game_name"
+            android:layout_toEndOf="@id/game_image"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/game_released"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03-03-2017"
+            android:textColor="@color/color_three"
+            android:textSize="15sp"
+            android:layout_below="@id/game_name"
+            android:layout_toEndOf="@id/game_rating"
+            android:layout_marginStart="30dp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

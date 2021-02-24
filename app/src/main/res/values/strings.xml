@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Video Games</string>
+    <string name="search">Search</string>
+    <string name="uzgunuz">Sorry, we couldn\'t find the game you\'re looking for!</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="nofav">You don\'t have any favorite games yet..</string>
+</resources>

@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ProjectVideoGames" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_two</item>
+        <item name="colorPrimaryVariant">@color/color_one</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_one</item>
+        <item name="colorSecondaryVariant">@color/color_one</item>
+        <item name="colorOnSecondary">@color/color_one</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/color_three</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorAccent">@color/color_two</item>
+    </style>
+
+    <style name="rounded_button_style">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="likeButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:outlineProvider">none</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="rippleColor">@color/black</item>
+        <item name="icon">@drawable/ic_baseline_thumb_up_24</item>
+        <item name="iconSize">40dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:insetLeft">5dp</item>
+        <item name="shapeAppearanceOverlay">@style/rounded_button_style</item>
+    </style>
+
+    <style name="dislikeButton">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:outlineProvider">none</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="rippleColor">@color/black</item>
+        <item name="icon">@drawable/ic_baseline_block_24</item>
+        <item name="iconSize">40dp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:insetLeft">7dp</item>
+        <item name="shapeAppearanceOverlay">@style/rounded_button_style</item>
+    </style>
+
+    <style name="bottom_nav" parent="@style/Widget.MaterialComponents.BottomNavigationView">
+        <item name="colorPrimary">@color/color_two</item>
+        <item name="colorAccent">@color/color_one</item>
+    </style>
+
+</resources>
